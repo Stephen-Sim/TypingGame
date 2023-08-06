@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
+using TypingGameAPI.Models;
 
 namespace TypingGameAPI.Controllers
 {
@@ -15,13 +16,14 @@ namespace TypingGameAPI.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetText()
+        public async Task<IActionResult> GetArticle()
         {
-            string text = string.Empty; 
+            var article = new Article();
 
             using (HttpClient client = new HttpClient())
             {
-                int page = new Random().Next(1, 89);
+                var rand = new Random();
+                int page = rand.Next(1, 90);
 
                 string url = $"https://www.dissentmagazine.org/online-articles/page/{page}/";
 
@@ -34,31 +36,65 @@ namespace TypingGameAPI.Controllers
                     HtmlDocument htmlDoc = new HtmlDocument();
                     htmlDoc.LoadHtml(htmlResult);
 
-                    // Find all article elements on the page
-                    var articleNodes = htmlDoc.DocumentNode.SelectNodes("//article");
-
-                    List<string> descriptions = new List<string>();
-
-                    if (articleNodes != null)
+                    // Get all links to article pages
+                    var linkNodes = htmlDoc.DocumentNode.SelectNodes("//a[contains(@href,'/online_articles/')]");
+                    if (linkNodes != null && linkNodes.Any())
                     {
-                        foreach (var articleNode in articleNodes)
-                        {
-                            // Find the first paragraph element within the article
-                            var pNode = articleNode.SelectSingleNode(".//p");
+                        // Choose a random link from the list
+                        var randomLinkNode = linkNodes[rand.Next(0, linkNodes.Count)];
 
-                            if (pNode != null)
+                        string articleLink = randomLinkNode.GetAttributeValue("href", "");
+                        var articleRes = await client.GetAsync(articleLink);
+
+                        if (articleRes.IsSuccessStatusCode)
+                        {
+                            var articleHtml = await articleRes.Content.ReadAsStringAsync();
+                            HtmlDocument articleHtmlDoc = new HtmlDocument();
+                            articleHtmlDoc.LoadHtml(articleHtml);
+
+                            var titleNode = articleHtmlDoc.DocumentNode.SelectSingleNode("//header//h1[contains(@class, 'hide-on-small-only')]");
+                            if (titleNode != null)
                             {
-                                string description = WebUtility.HtmlDecode(pNode.InnerText.Trim());
-                                descriptions.Add(description);
+                                article.Title = WebUtility.HtmlDecode(titleNode.InnerText.Trim());
+                            }
+
+                            var descriptionNode = articleHtmlDoc.DocumentNode.SelectSingleNode("//div[contains(@class, 'excerpt-tag')]//p");
+                            if (descriptionNode != null)
+                            {
+                                article.Description = WebUtility.HtmlDecode(descriptionNode.InnerText.Trim());
+                            }
+
+                            var paragraphNodes = articleHtmlDoc.DocumentNode.SelectNodes("//article//p");
+                            if (paragraphNodes != null)
+                            {
+                                List<string> paragraphs = new List<string>();
+                                foreach (var pNode in paragraphNodes)
+                                {
+                                    string paragraphText = WebUtility.HtmlDecode(pNode.InnerText.Trim());
+                                    paragraphs.Add(paragraphText);
+                                }
+
+                                // Combine paragraphs and split into strings with up to 4 sentences
+                                string combinedText = string.Join(" ", paragraphs);
+                                var sentences = combinedText.Split('.');
+
+                                List<string> sentenceGroups = new List<string>();
+
+                                for (int i = 0; i < sentences.Length; i += 3)
+                                {
+                                    var group = sentences.Skip(i).Take(3);
+                                    sentenceGroups.Add(string.Join(".", group).Trim());
+                                }
+
+                                int randomGroupIndex = rand.Next(0, sentenceGroups.Count);
+                                article.Text = sentenceGroups[randomGroupIndex].Trim() + ".";
                             }
                         }
                     }
-
-                    text = descriptions[new Random().Next(0, descriptions.Count() - 1)];
                 }
             }
 
-            return Ok(text);
+            return Ok(article);
         }
     }
 }
