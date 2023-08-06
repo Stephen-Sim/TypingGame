@@ -74,15 +74,15 @@ namespace TypingGameAPI.Controllers
                                     paragraphs.Add(paragraphText);
                                 }
 
-                                // Combine paragraphs and split into strings with up to 4 sentences
+                                // Combine paragraphs and split into strings with up to 2 sentences
                                 string combinedText = string.Join(" ", paragraphs);
                                 var sentences = combinedText.Split('.');
 
                                 List<string> sentenceGroups = new List<string>();
 
-                                for (int i = 0; i < sentences.Length; i += 3)
+                                for (int i = 0; i < sentences.Length; i += 2)
                                 {
-                                    var group = sentences.Skip(i).Take(3);
+                                    var group = sentences.Skip(i).Take(2);
                                     sentenceGroups.Add(string.Join(".", group).Trim());
                                 }
 
