@@ -20,3 +20,4 @@ C:\Users\simsh\Desktop\Typing Game\TypingGameApp\TypingGameApp\obj\Debug\net6.0-
 C:\Users\simsh\Desktop\Typing Game\TypingGameApp\TypingGameApp\obj\Debug\net6.0-windows\TypingGameApp.Forms.GameForm.resources
 C:\Users\simsh\Desktop\Typing Game\TypingGameApp\TypingGameApp\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
 C:\Users\simsh\Desktop\Typing Game\TypingGameApp\TypingGameApp\obj\Debug\net6.0-windows\TypingGameApp.csproj.CopyComplete
+C:\Users\simsh\Desktop\Typing Game\TypingGameApp\TypingGameApp\obj\Debug\net6.0-windows\TypingGameApp.Forms.CompleteTypeForm.resources

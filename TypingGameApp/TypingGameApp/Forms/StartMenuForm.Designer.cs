@@ -69,7 +69,7 @@
             // 
             // button1
             // 
-            button1.BackColor = Color.FromArgb(0, 192, 0);
+            button1.BackColor = Color.Lime;
             button1.FlatStyle = FlatStyle.Flat;
             button1.Location = new Point(67, 21);
             button1.Name = "button1";

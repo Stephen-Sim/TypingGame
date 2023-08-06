@@ -1,6 +1,6 @@
 ﻿namespace TypingGameApp.Forms
 {
-    partial class GameForm
+    partial class CompleteTypeForm
     {
         /// <summary>
         /// Required designer variable.
@@ -31,14 +31,13 @@
             panel2 = new Panel();
             label7 = new Label();
             label6 = new Label();
-            label1 = new Label();
-            textBox1 = new TextBox();
             label5 = new Label();
             label4 = new Label();
             label3 = new Label();
             label2 = new Label();
-            button1 = new Button();
+            label1 = new Label();
             button2 = new Button();
+            button1 = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             SuspendLayout();
@@ -47,73 +46,55 @@
             // 
             panel1.Controls.Add(button2);
             panel1.Controls.Add(button1);
-            panel1.Controls.Add(textBox1);
             panel1.Controls.Add(panel2);
-            panel1.Size = new Size(773, 395);
+            panel1.Size = new Size(499, 375);
             // 
             // panel2
             // 
-            panel2.BackColor = SystemColors.ButtonHighlight;
+            panel2.BackColor = Color.White;
+            panel2.Controls.Add(label7);
+            panel2.Controls.Add(label6);
             panel2.Controls.Add(label5);
             panel2.Controls.Add(label4);
-            panel2.Controls.Add(label7);
             panel2.Controls.Add(label3);
-            panel2.Controls.Add(label6);
             panel2.Controls.Add(label2);
             panel2.Controls.Add(label1);
-            panel2.Location = new Point(22, 27);
+            panel2.Location = new Point(12, 12);
             panel2.Name = "panel2";
-            panel2.Size = new Size(734, 279);
+            panel2.Size = new Size(478, 311);
             panel2.TabIndex = 0;
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Font = new Font("Consolas", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(213, 230);
+            label7.Location = new Point(98, 271);
             label7.Name = "label7";
-            label7.Size = new Size(0, 24);
+            label7.Size = new Size(0, 18);
             label7.TabIndex = 6;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Font = new Font("Consolas", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.Location = new Point(32, 230);
+            label6.Location = new Point(98, 217);
             label6.Name = "label6";
-            label6.Size = new Size(166, 24);
+            label6.Size = new Size(0, 18);
             label6.TabIndex = 5;
-            label6.Text = "Current Word:";
-            // 
-            // label1
-            // 
-            label1.Location = new Point(17, 19);
-            label1.Name = "label1";
-            label1.Size = new Size(700, 184);
-            label1.TabIndex = 0;
-            // 
-            // textBox1
-            // 
-            textBox1.BackColor = Color.White;
-            textBox1.Location = new Point(27, 337);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(516, 25);
-            textBox1.TabIndex = 1;
-            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(655, 236);
+            label5.Font = new Font("Consolas", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.Location = new Point(19, 271);
             label5.Name = "label5";
             label5.Size = new Size(48, 18);
             label5.TabIndex = 4;
-            label5.Text = "0 wpm";
+            label5.Text = "Time:";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(582, 236);
+            label4.Font = new Font("Consolas", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.Location = new Point(19, 217);
             label4.Name = "label4";
             label4.Size = new Size(56, 18);
             label4.TabIndex = 3;
@@ -121,71 +102,79 @@
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(509, 236);
+            label3.Font = new Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Location = new Point(19, 138);
             label3.Name = "label3";
-            label3.Size = new Size(24, 18);
+            label3.Size = new Size(441, 63);
             label3.TabIndex = 2;
-            label3.Text = "0s";
+            label3.Text = "label3";
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(439, 236);
+            label2.Location = new Point(19, 52);
             label2.Name = "label2";
-            label2.Size = new Size(48, 18);
+            label2.Size = new Size(431, 57);
             label2.TabIndex = 1;
-            label2.Text = "Time:";
+            label2.Text = "label2";
             // 
-            // button1
+            // label1
             // 
-            button1.BackColor = Color.Lime;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Location = new Point(549, 334);
-            button1.Name = "button1";
-            button1.Size = new Size(106, 31);
-            button1.TabIndex = 3;
-            button1.Text = "Restart";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            label1.AutoSize = true;
+            label1.Font = new Font("Consolas", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(19, 20);
+            label1.Name = "label1";
+            label1.Size = new Size(232, 18);
+            label1.TabIndex = 0;
+            label1.Text = "You Just Typed the Article: ";
             // 
             // button2
             // 
             button2.BackColor = Color.Red;
             button2.FlatStyle = FlatStyle.Flat;
-            button2.Location = new Point(657, 334);
+            button2.Location = new Point(386, 332);
             button2.Name = "button2";
             button2.Size = new Size(104, 31);
-            button2.TabIndex = 4;
+            button2.TabIndex = 8;
             button2.Text = "Exit";
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
-            // GameForm
+            // button1
+            // 
+            button1.BackColor = Color.Lime;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Location = new Point(278, 332);
+            button1.Name = "button1";
+            button1.Size = new Size(106, 31);
+            button1.TabIndex = 7;
+            button1.Text = "Retry";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
+            // CompleteTypeForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(773, 395);
-            Name = "GameForm";
-            Load += GameForm_Load;
+            ClientSize = new Size(499, 375);
+            Name = "CompleteTypeForm";
+            Load += CompleteTypeForm_Load;
             panel1.ResumeLayout(false);
-            panel1.PerformLayout();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
-        private TextBox textBox1;
+
         private Panel panel2;
-        private Label label1;
-        private Button button2;
-        private Button button1;
         private Label label5;
         private Label label4;
         private Label label3;
         private Label label2;
+        private Label label1;
         private Label label7;
         private Label label6;
+        private Button button2;
+        private Button button1;
     }
 }

@@ -83,8 +83,8 @@ namespace TypingGameAPI.Controllers
                                 for (int i = 0; i < sentences.Length; i += 2)
                                 {
                                     var group = sentences.Skip(i).Take(2);
-                                    sentenceGroups.Add(string.Join(".", group).Trim());
-                                }
+                                    sentenceGroups.Add(string.Join(".", group).Trim().Replace("’", "'").Replace("‘", "'").Replace("“", "\"").Replace("” ", "\""));
+                            }
 
                                 int randomGroupIndex = rand.Next(0, sentenceGroups.Count);
                                 article.Text = sentenceGroups[randomGroupIndex].Trim() + ".";
