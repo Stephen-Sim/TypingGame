@@ -29,16 +29,15 @@
         private void InitializeComponent()
         {
             panel2 = new Panel();
-            label7 = new Label();
-            label6 = new Label();
-            label1 = new Label();
-            textBox1 = new TextBox();
+            richTextBox1 = new RichTextBox();
             label5 = new Label();
             label4 = new Label();
             label3 = new Label();
             label2 = new Label();
+            textBox1 = new TextBox();
             button1 = new Button();
             button2 = new Button();
+            label1 = new Label();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             SuspendLayout();
@@ -54,52 +53,25 @@
             // panel2
             // 
             panel2.BackColor = SystemColors.ButtonHighlight;
+            panel2.Controls.Add(label1);
+            panel2.Controls.Add(richTextBox1);
             panel2.Controls.Add(label5);
             panel2.Controls.Add(label4);
-            panel2.Controls.Add(label7);
             panel2.Controls.Add(label3);
-            panel2.Controls.Add(label6);
             panel2.Controls.Add(label2);
-            panel2.Controls.Add(label1);
             panel2.Location = new Point(22, 27);
             panel2.Name = "panel2";
             panel2.Size = new Size(734, 279);
             panel2.TabIndex = 0;
             // 
-            // label7
+            // richTextBox1
             // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Consolas", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(213, 230);
-            label7.Name = "label7";
-            label7.Size = new Size(0, 24);
-            label7.TabIndex = 6;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Consolas", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.Location = new Point(32, 230);
-            label6.Name = "label6";
-            label6.Size = new Size(166, 24);
-            label6.TabIndex = 5;
-            label6.Text = "Current Word:";
-            // 
-            // label1
-            // 
-            label1.Location = new Point(17, 19);
-            label1.Name = "label1";
-            label1.Size = new Size(700, 184);
-            label1.TabIndex = 0;
-            // 
-            // textBox1
-            // 
-            textBox1.BackColor = Color.White;
-            textBox1.Location = new Point(27, 337);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(516, 25);
-            textBox1.TabIndex = 1;
-            textBox1.TextChanged += textBox1_TextChanged;
+            richTextBox1.BackColor = Color.White;
+            richTextBox1.Location = new Point(32, 22);
+            richTextBox1.Name = "richTextBox1";
+            richTextBox1.Size = new Size(671, 205);
+            richTextBox1.TabIndex = 8;
+            richTextBox1.Text = "";
             // 
             // label5
             // 
@@ -137,6 +109,15 @@
             label2.TabIndex = 1;
             label2.Text = "Time:";
             // 
+            // textBox1
+            // 
+            textBox1.BackColor = Color.White;
+            textBox1.Location = new Point(27, 337);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(516, 25);
+            textBox1.TabIndex = 1;
+            textBox1.TextChanged += textBox1_TextChanged;
+            // 
             // button1
             // 
             button1.BackColor = Color.Lime;
@@ -161,6 +142,17 @@
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Consolas", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(204, 117);
+            label1.Name = "label1";
+            label1.Size = new Size(329, 32);
+            label1.TabIndex = 9;
+            label1.Text = "Retrieving Data . . .";
+            label1.Visible = false;
+            // 
             // GameForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -178,14 +170,13 @@
         #endregion
         private TextBox textBox1;
         private Panel panel2;
-        private Label label1;
         private Button button2;
         private Button button1;
         private Label label5;
         private Label label4;
         private Label label3;
         private Label label2;
-        private Label label7;
-        private Label label6;
+        private RichTextBox richTextBox1;
+        private Label label1;
     }
 }

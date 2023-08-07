@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ibjJHtRSCHIWPAGaCJTi2cU11os87G4skSMoAWf5i9oSkhxjMjEPqzucj+s6uqyFFNyQlV0jrSspieZAFFJuwQ==",
+  "dgSpecHash": "3SZtJH8O4BZzZEjcDf+JMo6XS0fJyoAf3huGOzZrTmQSNwRMg595K3pyiVLlp+rlHytV8ivRSYFNiqr687gNig==",
   "success": true,
-  "projectFilePath": "C:\\Users\\simsh\\Desktop\\Typing Game\\TypingGameAPI\\TypingGameAPI\\TypingGameAPI.csproj",
+  "projectFilePath": "C:\\Users\\simsh\\Desktop\\TypingGame\\TypingGameAPI\\TypingGameAPI\\TypingGameAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\simsh\\.nuget\\packages\\htmlagilitypack\\1.11.51\\htmlagilitypack.1.11.51.nupkg.sha512",
     "C:\\Users\\simsh\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

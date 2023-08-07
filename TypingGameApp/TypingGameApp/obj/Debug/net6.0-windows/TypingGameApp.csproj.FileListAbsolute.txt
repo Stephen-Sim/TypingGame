@@ -21,3 +21,26 @@ C:\Users\simsh\Desktop\Typing Game\TypingGameApp\TypingGameApp\obj\Debug\net6.0-
 C:\Users\simsh\Desktop\Typing Game\TypingGameApp\TypingGameApp\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
 C:\Users\simsh\Desktop\Typing Game\TypingGameApp\TypingGameApp\obj\Debug\net6.0-windows\TypingGameApp.csproj.CopyComplete
 C:\Users\simsh\Desktop\Typing Game\TypingGameApp\TypingGameApp\obj\Debug\net6.0-windows\TypingGameApp.Forms.CompleteTypeForm.resources
+C:\Users\simsh\Desktop\TypingGame\TypingGameApp\TypingGameApp\bin\Debug\net6.0-windows\TypingGameApp.exe
+C:\Users\simsh\Desktop\TypingGame\TypingGameApp\TypingGameApp\bin\Debug\net6.0-windows\TypingGameApp.deps.json
+C:\Users\simsh\Desktop\TypingGame\TypingGameApp\TypingGameApp\bin\Debug\net6.0-windows\TypingGameApp.runtimeconfig.json
+C:\Users\simsh\Desktop\TypingGame\TypingGameApp\TypingGameApp\bin\Debug\net6.0-windows\TypingGameApp.dll
+C:\Users\simsh\Desktop\TypingGame\TypingGameApp\TypingGameApp\bin\Debug\net6.0-windows\TypingGameApp.pdb
+C:\Users\simsh\Desktop\TypingGame\TypingGameApp\TypingGameApp\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\simsh\Desktop\TypingGame\TypingGameApp\TypingGameApp\obj\Debug\net6.0-windows\TypingGameApp.csproj.AssemblyReference.cache
+C:\Users\simsh\Desktop\TypingGame\TypingGameApp\TypingGameApp\obj\Debug\net6.0-windows\TypingGameApp.Forms.BaseForm.resources
+C:\Users\simsh\Desktop\TypingGame\TypingGameApp\TypingGameApp\obj\Debug\net6.0-windows\TypingGameApp.Forms.CompleteTypeForm.resources
+C:\Users\simsh\Desktop\TypingGame\TypingGameApp\TypingGameApp\obj\Debug\net6.0-windows\TypingGameApp.Forms.GameForm.resources
+C:\Users\simsh\Desktop\TypingGame\TypingGameApp\TypingGameApp\obj\Debug\net6.0-windows\TypingGameApp.Forms.StartMenuForm.resources
+C:\Users\simsh\Desktop\TypingGame\TypingGameApp\TypingGameApp\obj\Debug\net6.0-windows\TypingGameApp.Properties.Resources.resources
+C:\Users\simsh\Desktop\TypingGame\TypingGameApp\TypingGameApp\obj\Debug\net6.0-windows\TypingGameApp.csproj.GenerateResource.cache
+C:\Users\simsh\Desktop\TypingGame\TypingGameApp\TypingGameApp\obj\Debug\net6.0-windows\TypingGameApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\simsh\Desktop\TypingGame\TypingGameApp\TypingGameApp\obj\Debug\net6.0-windows\TypingGameApp.AssemblyInfoInputs.cache
+C:\Users\simsh\Desktop\TypingGame\TypingGameApp\TypingGameApp\obj\Debug\net6.0-windows\TypingGameApp.AssemblyInfo.cs
+C:\Users\simsh\Desktop\TypingGame\TypingGameApp\TypingGameApp\obj\Debug\net6.0-windows\TypingGameApp.csproj.CoreCompileInputs.cache
+C:\Users\simsh\Desktop\TypingGame\TypingGameApp\TypingGameApp\obj\Debug\net6.0-windows\TypingGameApp.csproj.CopyComplete
+C:\Users\simsh\Desktop\TypingGame\TypingGameApp\TypingGameApp\obj\Debug\net6.0-windows\TypingGameApp.dll
+C:\Users\simsh\Desktop\TypingGame\TypingGameApp\TypingGameApp\obj\Debug\net6.0-windows\refint\TypingGameApp.dll
+C:\Users\simsh\Desktop\TypingGame\TypingGameApp\TypingGameApp\obj\Debug\net6.0-windows\TypingGameApp.pdb
+C:\Users\simsh\Desktop\TypingGame\TypingGameApp\TypingGameApp\obj\Debug\net6.0-windows\TypingGameApp.genruntimeconfig.cache
+C:\Users\simsh\Desktop\TypingGame\TypingGameApp\TypingGameApp\obj\Debug\net6.0-windows\ref\TypingGameApp.dll

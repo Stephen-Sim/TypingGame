@@ -61,11 +61,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\simsh\\Desktop\\Typing Game\\TypingGameApp\\TypingGameApp\\TypingGameApp.csproj",
+      "projectUniqueName": "C:\\Users\\simsh\\Desktop\\TypingGame\\TypingGameApp\\TypingGameApp\\TypingGameApp.csproj",
       "projectName": "TypingGameApp",
-      "projectPath": "C:\\Users\\simsh\\Desktop\\Typing Game\\TypingGameApp\\TypingGameApp\\TypingGameApp.csproj",
+      "projectPath": "C:\\Users\\simsh\\Desktop\\TypingGame\\TypingGameApp\\TypingGameApp\\TypingGameApp.csproj",
       "packagesPath": "C:\\Users\\simsh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\simsh\\Desktop\\Typing Game\\TypingGameApp\\TypingGameApp\\obj\\",
+      "outputPath": "C:\\Users\\simsh\\Desktop\\TypingGame\\TypingGameApp\\TypingGameApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
