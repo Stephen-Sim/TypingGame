@@ -34,6 +34,7 @@
             button1 = new Button();
             button2 = new Button();
             panel2 = new Panel();
+            label2 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
@@ -41,6 +42,7 @@
             // 
             // panel1
             // 
+            panel1.Controls.Add(label2);
             panel1.Controls.Add(panel2);
             panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(label1);
@@ -101,6 +103,17 @@
             panel2.Size = new Size(592, 92);
             panel2.TabIndex = 4;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(620, 423);
+            label2.Name = "label2";
+            label2.Size = new Size(168, 18);
+            label2.TabIndex = 5;
+            label2.Text = "Creator, Stephen Sim";
+            // 
             // StartMenuForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -121,5 +134,6 @@
         private Button button2;
         private Button button1;
         private Panel panel2;
+        private Label label2;
     }
 }

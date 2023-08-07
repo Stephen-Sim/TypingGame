@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             panel2 = new Panel();
+            label1 = new Label();
             richTextBox1 = new RichTextBox();
             label5 = new Label();
             label4 = new Label();
@@ -37,7 +38,6 @@
             textBox1 = new TextBox();
             button1 = new Button();
             button2 = new Button();
-            label1 = new Label();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             SuspendLayout();
@@ -63,6 +63,18 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(734, 279);
             panel2.TabIndex = 0;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Consolas", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(204, 117);
+            label1.Name = "label1";
+            label1.Size = new Size(329, 32);
+            label1.TabIndex = 9;
+            label1.Text = "Retrieving Data . . .";
+            label1.Visible = false;
             // 
             // richTextBox1
             // 
@@ -141,17 +153,6 @@
             button2.Text = "Exit";
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Consolas", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(204, 117);
-            label1.Name = "label1";
-            label1.Size = new Size(329, 32);
-            label1.TabIndex = 9;
-            label1.Text = "Retrieving Data . . .";
-            label1.Visible = false;
             // 
             // GameForm
             // 

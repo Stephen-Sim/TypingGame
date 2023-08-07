@@ -32,6 +32,8 @@ namespace TypingGameApp.Forms
             richTextBox1.BackColor = this.BackColor;
             richTextBox1.TabStop = false;
 
+            label1.BackColor = this.BackColor;
+
             articleService = new ArticleService();
             Words = new List<string>();
         }
@@ -40,7 +42,7 @@ namespace TypingGameApp.Forms
         {
             richTextBox1.SelectionStart = 0;
             richTextBox1.SelectAll();
-            richTextBox1.SelectionBackColor = this.richTextBox1.BackColor;
+            richTextBox1.SelectionBackColor = this.BackColor;
 
             startLenght = 0;
             counter = 0;
@@ -99,18 +101,17 @@ namespace TypingGameApp.Forms
                     {
                         if (wordCount + 1 == Words.Count())
                         {
+                            currentGameCount = 0;
                             var temp = seconds;
-                            seconds = 0;
-
                             this.Hide();
 
-                            new CompleteTypeForm(this.Article, ((wordCount / (double)temp) * 60).ToString("0"), temp).ShowDialog();
+                            new CompleteTypeForm(this.Article, ((Math.Round((wordCount / (double)temp) * 60)).ToString("0")), temp).ShowDialog();
                             return;
                         }
 
                         richTextBox1.SelectionStart = 0;
                         richTextBox1.SelectAll();
-                        richTextBox1.SelectionBackColor = this.richTextBox1.BackColor;
+                        richTextBox1.SelectionBackColor = this.BackColor;
 
                         startLenght += Words[counter].Length + 1;
                         counter++;
@@ -122,7 +123,7 @@ namespace TypingGameApp.Forms
                         richTextBox1.SelectionLength = Words[counter].Length;
                         richTextBox1.SelectionBackColor = Color.LightBlue;
 
-                        label5.Text = $"{((wordCount / (double)seconds) * 60).ToString("0")}wpm";
+                        label5.Text = $"{(Math.Round((wordCount / (double)seconds) * 60)).ToString("0")}wpm";
 
                         return;
                     }
