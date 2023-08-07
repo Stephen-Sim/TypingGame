@@ -55,4 +55,4 @@ Before you begin, ensure you have met the following requirements:
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](./license.md).
