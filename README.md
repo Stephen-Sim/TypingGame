@@ -19,7 +19,7 @@ Before you begin, ensure you have met the following requirements:
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/your-username/typing-speed-game.git`
+1. Clone the repository: `git clone https://github.com/Stephen-Sim/TypingGame.git`
 2. Open the project in Visual Studio.
 3. Build the solution to restore NuGet packages.
 
